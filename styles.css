@@ -81,7 +81,7 @@ form button:hover {
 
 footer {
   padding: 2em;
-  min-height: 25vh;
+  min-height: 10vh;
   color: #ffffff;
   background-color: #15372b;
   text-align: center;
@@ -157,11 +157,6 @@ footer a:hover {
   grid-template-columns: 50% 50%;
 }
 
-.footer-nav {
-  display: flex;
-  flex-direction: column;
-}
-
 ::selection {
   background: #ff9f2996;
 }
@@ -172,11 +167,5 @@ footer a:hover {
   .skills-container_content {
     padding: 2em;
     grid-template-columns: 25% 25% 25% 25%;
-  }
-
-  .footer-nav {
-    grid-template-columns: 50% 50%;
-    text-align: left;
-    align-self: center;
   }
 }
