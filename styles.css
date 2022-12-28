@@ -135,10 +135,14 @@ footer a:hover {
   display: inline;
   text-decoration: none;
   transition: 0.1s;
+  border-radius: 20px;
 }
 
 .projects-container a:hover {
   color: #ff9f29;
+  text-decoration: underline;
+  text-decoration-color: rgb(225, 225, 225);
+  text-decoration-thickness: .25em;
 }
 
 .skills-container {
