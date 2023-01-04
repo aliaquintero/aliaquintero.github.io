@@ -1,14 +1,30 @@
-// TODO:
-// * Hero
-//     - Animated abstract graphic
-//     - Animated arrow showing site flow (scroll) Click to go to next section
-// * Projects
-//     - Add stack tags below project description (#react, #css, #javascript, etc.)
-//     - Transition fade in each individual project (scroll timer thing)
-//     - Fix spacing before contact form
-// * Contact
-//     - Hook up to Netlify forms
-//     - Transition fade in on scroll
-//     - When submitted, change to remove form + verify message sent + prevent multi-submission
-// * Footer
-//     - Center offiste icons vertically
+const header = document.querySelector(".head");
+const headerOne = document.querySelector(".head-primary");
+const headerTwo = document.querySelector(".head-secondary");
+const headerText = document.querySelector(".head-text");
+const arrow = document.querySelector(".arrow");
+const skills = document.querySelector(".skills-container");
+
+// defer hero load
+window.addEventListener("load", (e) => {
+  console.log("the page has loaded");
+  setTimeout(() => {
+    header.classList.remove("hidden");
+  }, "500");
+  setTimeout(() => {
+    arrow.classList.remove("hidden");
+  }, "2000");
+});
+
+// click arrow to scroll to next element
+arrow.addEventListener("click", (e) => {
+  skills.scrollIntoView({ behavior: "smooth", block: "center" });
+  arrow.classList.add("hidden");
+});
+
+// resets arrow when scroll to top
+window.addEventListener("scroll", (e) => {
+  if (window.scrollY === 0) {
+    arrow.classList.remove("hidden");
+  }
+});
