@@ -142,7 +142,7 @@ footer a:hover {
   color: #ff9f29;
   text-decoration: underline;
   text-decoration-color: rgb(225, 225, 225);
-  text-decoration-thickness: .25em;
+  text-decoration-thickness: 0.25em;
 }
 
 .skills-container {
@@ -170,6 +170,6 @@ footer a:hover {
 @media only screen and (min-width: 768px) {
   .skills-container_content {
     padding: 2em;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 33% 33% 33%;
   }
 }
